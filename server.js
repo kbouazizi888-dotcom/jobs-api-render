@@ -15,7 +15,7 @@ app.get('/api/search', async (req, res) => {
         const SERPSTACK_API_KEY = process.env.SERPSTACK_API_KEY;
         const query = encodeURIComponent('مطلوب مدرب سياقة تونس');
         
-        // الاتصال بمحرك البحث (Serpstack كمثال)
+        // الاتصال بمحرك البحث (Serpstack ال)
         const response = await fetch(`http://api.serpstack.com/search?access_key=${SERPSTACK_API_KEY}&query=${query}&gl=tn`);
         const data = await response.json();
 
